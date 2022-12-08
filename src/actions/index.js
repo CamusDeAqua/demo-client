@@ -14,7 +14,7 @@ export function getInfo(){
 
 export function postLogin(input){
     return async (dispatch) => {
-        let json = await axios.post("ps-ch-deploy.herokuapp.com/login", input);
+        let json = await axios.post("https://ps-ch-deploy.herokuapp.com/login", input);
         return dispatch({
             type: 'POST_LOGIN',
             payload: json.data

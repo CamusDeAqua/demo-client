@@ -28,7 +28,7 @@ export default function Dbamanager() {
     }
     const handleSubmit = async (e)=>{
         e.preventDefault()
-        let json = await axios.post("http://localhost:3001/login", input);
+        let json = await axios.post("https://ps-ch-deploy.herokuapp.com/login", input);
         dispatch(postLogin(input)).then(() => {
             if (json.data?.user && json.data?.pass){
                 history.push("/abm")
