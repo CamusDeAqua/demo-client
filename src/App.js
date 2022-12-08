@@ -9,9 +9,8 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Switch>
-        <Route exact path='/' component= {Home} />
+        <Route exact path='/' component= {dbamanager} />
         <Route exact path='/abm' component= {Abm} />
-        <Route exact path='/login' component= {dbamanager} />
       </Switch>
     </div>
     </BrowserRouter>
