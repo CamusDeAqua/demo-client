@@ -9,7 +9,7 @@ import { store } from './store';
 import axios from 'axios';
 //dotenv.config();
 
-axios.defaults.baseURL = "https://ps-ch-deploy.herokuapp.com" || "http://localhost:3001";
+axios.defaults.baseURL = "https://ps-ch-deploy.herokuapp.com";
 
 ReactDOM.render(
   <Provider store={store}>
